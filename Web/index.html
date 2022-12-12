@@ -52,7 +52,7 @@
                                     <div class="col-md-6 extra-info">
                                         <div class="row">
                                             <div class="col-md-6 mb-5">
-                                                <h3>Contact Info</h3>
+                                                <h3>Info de Contacto</h3>
                                                 <p>98 West 21th Street, Suite 721 <br> New York NY 10016</p>
                                                 <p>info@yourdomain.com</p>
                                                 <p>(+1) 435 3533</p>
@@ -78,13 +78,17 @@
     </header>
     <!-- END head -->
 
-    <section class="site-hero overlay" style="background-image: url(img/hero_1.jpg)">
+    <section class="site-hero overlay" style="background-image: url('img/Munich - 001.jpg')">
         <div class="container">
             <div class="row site-hero-inner justify-content-center align-items-center">
                 <div class="col-md-10 text-center">
-                    <h1 class="heading" data-aos="fade-up">Welcome to <em>Villa</em> resort</h1>
-                    <p class="sub-heading mb-5" data-aos="fade-up" data-aos-delay="100">Discover our world-class hotel &amp; restaurant resort.</p>
-                    <p data-aos="fade-up" data-aos-delay="100"><a href="#" class="btn uppercase btn-primary mr-md-2 mr-0 mb-3 d-sm-inline d-block">Explore The Beauty</a> <a href="#" class="btn uppercase btn-outline-light d-sm-inline d-block">Download</a></p>
+                    <h1 class="heading" data-aos="fade-up">Bienvenidos al <em>Gran Hotel Munich</em>.</h1>
+                    <p class="sub-heading mb-5" data-aos="fade-up" data-aos-delay="100">Disfruta de un momento de descanso, y calidez en tu servicio.</p>
+                    <p data-aos="fade-up" data-aos-delay="100"><a href="javascript: window.scrollTo({
+                      top: document.querySelector('#section2').getBoundingClientRect().top,
+                      left: document.querySelector('#section2').getBoundingClientRect().left,
+                      behavior: 'smooth'
+                    })" class="btn uppercase btn-outline-light d-sm-inline d-block">Ver Mas</a></p>
                 </div>
             </div>
             <!-- <a href="#" class="scroll-down">Scroll Down</a> -->
@@ -92,51 +96,52 @@
     </section>
     <!-- END section -->
 
-    <section class="section visit-section">
-        <div class="container">
+    <section class="section visit-section" id="section2">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="heading" data-aos="fade-right">You Can Visit</h2>
+                    <h2 class="heading" data-aos="fade-right">Podes disfrutar</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-right">
-                    <a href="restaurant.html"><img src="img/img_1.jpg" alt="Image placeholder" class="img-fluid"> </a>
-                    <h3><a href="restaurant.html">Food &amp; Wines</a></h3>
-                    <div class="reviews-star float-left">
+                    <a href="restaurant.html"><img src="img/Habitacion 1.jpg" alt="Image placeholder" class="img-fluid"> </a>
+                    <h3><a href="restaurant.html">Comodas Habitaciones</a></h3>
+                    <!-- <div class="reviews-star float-left">
                         <span class="ion-android-star"></span>
                         <span class="ion-android-star"></span>
                         <span class="ion-android-star"></span>
                         <span class="ion-android-star-half"></span>
                         <span class="ion-android-star-outline"></span>
-                    </div>
+                    </div> -->
                     <span class="reviews-count float-right">
-              3,239 reviews
+                      Habitaciones de amplio tamaño para que puedas disfrutar de una estadía confortable.
             </span>
                 </div>
                 <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-right" data-aos-delay="100">
-                    <a href="restaurant.html"><img src="img/img_2.jpg" alt="Image placeholder" class="img-fluid"> </a>
-                    <h3><a href="restaurant.html">Resort &amp; Spa</a></h3>
+                    <a href="restaurant.html"><img src="img/Comedor.jpg" alt="Image placeholder" class="img-fluid"> </a>
+                    <h3><a href="restaurant.html">Espacios unicos</a></h3>
                     <div class="reviews-star float-left">
-                        <span class="ion-android-star"></span>
+                        <!-- <span class="ion-android-star"></span>
                         <span class="ion-android-star"></span>
                         <span class="ion-android-star"></span>
                         <span class="ion-android-star-half"></span>
-                        <span class="ion-android-star-outline"></span>
+                        <span class="ion-android-star-outline"></span> -->
                     </div>
                     <span class="reviews-count float-right">
-              4,921 reviews
+              <!-- FIXME: -->
+                      Cada rincon del hotel esta
             </span>
                 </div>
                 <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-right" data-aos-delay="200">
                     <a href="hotel.html"><img src="img/img_4.jpg" alt="Image placeholder" class="img-fluid"> </a>
                     <h3><a href="hotel.html">Hotel Rooms</a></h3>
                     <div class="reviews-star float-left">
+                        <!-- <span class="ion-android-star"></span>
                         <span class="ion-android-star"></span>
                         <span class="ion-android-star"></span>
                         <span class="ion-android-star"></span>
-                        <span class="ion-android-star"></span>
-                        <span class="ion-android-star-outline"></span>
+                        <span class="ion-android-star-outline"></span> -->
                     </div>
                     <span class="reviews-count float-right">
               2,112 reviews
@@ -146,11 +151,11 @@
                     <a href="yacht.html"><img src="img/img_5.jpg" alt="Image placeholder" class="img-fluid"> </a>
                     <h3><a href="yacht.html">Yacht Club</a></h3>
                     <div class="reviews-star float-left">
+                        <!-- <span class="ion-android-star"></span>
                         <span class="ion-android-star"></span>
                         <span class="ion-android-star"></span>
                         <span class="ion-android-star"></span>
-                        <span class="ion-android-star"></span>
-                        <span class="ion-android-star-outline"></span>
+                        <span class="ion-android-star-outline"></span> -->
                     </div>
                     <span class="reviews-count float-right">
               6,421 reviews

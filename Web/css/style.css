@@ -509,9 +509,7 @@ textarea.form-control {
 }
 
 .media-custom .meta-post {
-    color: #ced4da;
-    text-transform: uppercase;
-    letter-spacing: .1em;
+    color: black;  
 }
 
 .owl-carousel .owl-item {

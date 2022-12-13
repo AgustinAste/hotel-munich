@@ -1,6 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
+<?php
+include("api/correo.php");
+?>
 <head>
     <title>Gran Hotel Munich</title>
     <meta charset="utf-8">
@@ -98,24 +100,24 @@
                         <div class="row">
                             <div class="col-md-6 form-group">
                                 <label for="name">Nombre</label>
-                                <input type="text" id="name" class="form-control ">
+                                <input type="text" id="name" name="name" class="form-control " required="true">
                             </div>
                             <div class="col-md-6 form-group">
                                 <label for="phone">Celular</label>
-                                <input type="text" id="phone" class="form-control ">
+                                <input type="text" id="phone" name="phone" class="form-control " required="true">
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-md-12 form-group">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" class="form-control ">
+                                <input type="email" id="email" name="email" class="form-control " required="true">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12 form-group">
                                 <label for="message">Mensaje</label>
-                                <textarea name="message" id="message" class="form-control " cols="30" rows="8"></textarea>
+                                <textarea  id="message" name="message" class="form-control " cols="30" rows="8"></textarea>
                             </div>
                         </div>
                         <div class="row">

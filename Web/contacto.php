@@ -97,7 +97,7 @@ include("api/correo.php");
             <div class="row">
                 <div class="col-md-7">
 
-                    <form action="#" method="post" class="bg-white p-md-5 p-4 mb-5" style="margin-top: -150px;">
+                    <form action="api/correo.php" method="post" class="bg-white p-md-5 p-4 mb-5" style="margin-top: -150px;">
                         <div class="row">
                             <div class="col-md-6 form-group">
                                 <label for="name">Nombre</label>

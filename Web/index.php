@@ -60,7 +60,8 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <h3>Redes sociales</h3>
-                                                <ul class="list-unstyled">
+                                                <ul class="list-unstyled"> 
+                                                    <li><a href="https://www.tripadvisor.es/Hotel_Review-g1238496-d23867384-Reviews-Gran_Hotel_Munich-Punta_Ballena_Maldonado_Maldonado_Department.html">TripAdvisor</a></li>
                                                     <li><a href="https://instagram.com/granhotelmunich/">Instagram</a></li>
                                                 </ul>
                                             </div>

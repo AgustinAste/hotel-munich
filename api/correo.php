@@ -1,22 +1,36 @@
 <?php 
-if(isset($_POST['enviar'])){
-    if( !empty($_POST['name']) && !empty($_POST['message']) && !empty($_POST['email']) && !empty($_POST['phone']) ){
 
-        $destinatario = $_POST['email']; 
+if(isset($_POST['email'])){
+
+        $destinatario = "aste.agustin@gmail.com";//$_POST['email']; 
         $asunto = "Reserva web " + $_POST['name']; 
-        $cuerpo = $_POST['message'] + "\n\nNúmero de telefono: " + $_POST['phone']; 
+        $cuerpo = "Mensaje: \n" + $_POST['message'] +
+        "\n\nDatos del interesado:"+
+        "\nNombre" + $_POST['name'] +
+        "\nNúmero de telefono: : " + $_POST['phone'] +
+        "\nEmail: " + $_POST['email']; 
         
-        //para el envío en formato HTML 
+
         $headers = "MIME-Version: 1.0\r\n"; 
         $headers .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
+        $headers .= "X-Priority: 1" . "\r\n";
+    
+        $headers .= "From: Reservas web - Gran Horel Munich <hola@granhotelmunich.com>\r\n"; 
         
-        //dirección del remitente 
-        $headers .= "From: Reservas Gran Hotel Munich <reservas@granhotelmunich.com>\r\n"; 
         
-        //dirección de respuesta, si queremos que sea distinta que la del remitente 
-        // $headers .= "Reply-To: test@test.com\r\n"; 
         
-        mail($destinatario,$asunto,$cuerpo,$headers) 
+        $success=mail($destinatario,$asunto,$cuerpo,$headers);
+    if($success)
+    { 
+        echo '
+        <p>Hemos enviado tu mensaje, pronto nos contactaremos contigo!</p> 
+        ';
+    } else { 
+        echo '
+        <p>Ups! Parece que algo no esta funcionando como debería.</p>
+        ';
     }
 }
+    
+
 ?>

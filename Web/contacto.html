@@ -94,8 +94,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-7">
+                    <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+                    <div id="form-response">
 
-                    <form action="api/correo.php" method="post" class="bg-white p-md-5 p-4 mb-5" style="margin-top: -150px;">
+                    </div>
+                    <form action="api/correo.php" method="post" target="form-response" class="bg-white p-md-5 p-4 mb-5" style="margin-top: -150px;">
                         <div class="row">
                             <div class="col-md-6 form-group">
                                 <label for="name">Nombre</label>
@@ -121,10 +124,11 @@
                         </div>
                         <div class="row">
                             <div class="col-md-6 form-group">
-                                <input type="submit" value="Enviar mensaje" class="btn btn-primary">
+                                <input type="submit" value="Enviar" class="btn btn-primary">
                             </div>
                         </div>
                     </form>
+
 
                 </div>
                 <div class="col-md-5">
@@ -133,7 +137,7 @@
                             <p><span class="d-block">Dirección:</span> <span> Av. Laureano Alonso Pérez y Av. de la Paloma<br>20100
                   Punta del Este</span></p>
                             <p><span class="d-block">Teléfono:</span> <span> 4248 1557</span></p>
-                            <p><span class="d-block">Email:</span> <span> info@yourdomain.com</span></p>
+                            <p><span class="d-block">Email:</span> <span> recepcion@granhotelmunich.com</span></p>
                         </div>
                     </div>
                 </div>

@@ -2,13 +2,13 @@
 
 if(isset($_POST['email'])){
 
-        $destinatario = "aste.agustin@gmail.com";//$_POST['email']; 
-        $asunto = "Reserva web " + $_POST['name']; 
-        $cuerpo = "Mensaje: \n" + $_POST['message'] +
-        "\n\nDatos del interesado:"+
-        "\nNombre" + $_POST['name'] +
-        "\nNúmero de telefono: : " + $_POST['phone'] +
-        "\nEmail: " + $_POST['email']; 
+        $destinatario = "reservas@granhotelmunich.com";
+        $asunto = "Reserva web " . $_POST['name']; 
+        $cuerpo = "Mensaje: \n\r<br>" . $_POST['message'] .
+        "\n\r\n\r<br><br>Datos del interesado:".
+        "\n\r<br>Nombre: " . $_POST['name'] .
+        "\n\r<br>Número de telefono: " . $_POST['phone'] .
+        "\n\r<br>Email: " . $_POST['email']; 
         
 
         $headers = "MIME-Version: 1.0\r\n"; 
@@ -23,11 +23,11 @@ if(isset($_POST['email'])){
     if($success)
     { 
         echo '
-        <p>Hemos enviado tu mensaje, pronto nos contactaremos contigo!</p> 
+        <p class="bg-white p-md-5 p-4 mb-5">Hemos enviado tu mensaje, pronto nos contactaremos contigo!</p> 
         ';
     } else { 
         echo '
-        <p>Ups! Parece que algo no esta funcionando como debería.</p>
+        <p class="bg-white p-md-5 p-4 mb-5">Ups! Parece que algo no esta funcionando como debería.</p>
         ';
     }
 }
